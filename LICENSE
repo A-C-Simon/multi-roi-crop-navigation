@@ -1,0 +1,9 @@
+Copyright (c) 2026 A-C-Simon. All rights reserved.
+
+The original project did not specify a root software license. This repository
+preserves that licensing status and does not grant additional rights to use,
+modify, or redistribute the original project code. Contact the repository owner
+for permission or licensing terms.
+
+Third-party files and the mrsim simulation package retain their separate terms.
+See THIRD_PARTY_NOTICES.md and tests/sim_ros2/src/mrsim/LICENSE.

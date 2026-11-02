@@ -1,0 +1,11 @@
+include LICENSE THIRD_PARTY_NOTICES.md README.md requirements.txt constraints-tested.txt
+include test_temporal_filter.py
+recursive-include docs *.md *.json *.csv *.png
+recursive-include examples *.py
+recursive-include scripts *.py
+recursive-include tests *.py *.sh *.xml *.world *.json *.sdf *.urdf *.config *.stl *.md LICENSE
+include tests/sim_ros2/src/mrsim/resource/mrsim
+prune tests/sim_ros2/build
+prune tests/sim_ros2/install
+prune tests/sim_ros2/log
+global-exclude *.pyc

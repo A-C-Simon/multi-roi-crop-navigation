@@ -1,0 +1,6 @@
+# Reference runtime used for the source snapshot checks on Linux / Python 3.10.
+# This is a constraints file, not a complete environment lock.
+numpy==1.26.4
+opencv-python==4.11.0.86
+scipy==1.15.3
+scikit-learn==1.7.0

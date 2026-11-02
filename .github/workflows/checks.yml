@@ -1,0 +1,47 @@
+name: Checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline:
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install '.[dev]'
+          python -m pip check
+      - name: Check source snapshot
+        run: python scripts/verify_snapshot.py
+      - name: Run existing regression checks
+        run: python -m pytest -q
+      - name: Exercise installed commands
+        run: |
+          multiroi-detect --help
+          multiroi-nav --help
+          multiroi-reference --help
+          python examples/generate_sample.py
+          multiroi-detect --input examples/data --results_dir outputs/detection
+          multiroi-nav --input examples/data/corridor.mp4 --video --output outputs/video
+          python scripts/check_example_outputs.py
+      - name: Build distributions
+        run: python -m build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: distributions-python-${{ matrix.python }}
+          path: dist/*
