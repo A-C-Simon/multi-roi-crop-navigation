@@ -16,7 +16,8 @@ recorded in [source-snapshot.json](source-snapshot.json).
 This distribution adds Python packaging, command entry points, installation
 instructions, generated examples, a documentation set, and CI configuration.
 Historical result CSV files and experiment notes are retained separately.
-The paper PDF, original photo collection, full agribot checkout, local caches,
+One original field photograph is included for the README example. The paper
+PDF, remaining photo collection, full agribot checkout, local caches,
 colcon build output, and generated navigation runs are excluded.
 
 ## Research reference

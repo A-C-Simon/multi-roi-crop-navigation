@@ -64,11 +64,10 @@ lock of every transitive package. The declared dependency ranges retain NumPy
 ```bash
 multiroi-detect --help
 multiroi-nav --help
-python examples/generate_sample.py
-multiroi-detect --input examples/data --results_dir outputs/install-check
+multiroi-detect --input examples/field --results_dir outputs/install-check
 ```
 
-Expect two processed images and `detection_data.csv` in
+Expect one processed image and `detection_data.csv` in
 `outputs/install-check`. For the automated checks, install the `dev` extra and
 run `python -m pytest` from the repository root.
 

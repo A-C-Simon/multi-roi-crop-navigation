@@ -32,8 +32,11 @@ rows based on adaptive multi-ROI in maize fields. *International Journal of
 Agricultural and Biological Engineering*, 2021, 14(4), 217-225.
 [DOI: 10.25165/j.ijabe.20211404.6315](https://doi.org/10.25165/j.ijabe.20211404.6315).
 
-The article PDF and the original photograph collection are not bundled. The
-example images in this repository are generated geometric scenes.
+The article PDF and the full original photograph collection are not bundled.
+One photograph, `photo_7_2026-08-18_17-17-57.png`, is copied unchanged from the
+original repository for the field example and README preview. Its source and
+reproduction command are recorded in [image details](docs/assets/README.md).
+The separate automated example generator produces geometric scenes.
 
 ## Python dependencies
 

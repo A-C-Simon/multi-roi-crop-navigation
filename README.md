@@ -10,11 +10,12 @@ rover control.
 ![Status](https://img.shields.io/badge/status-research%20preview-b7791f)
 [![Checks](https://github.com/A-C-Simon/multi-roi-crop-navigation/actions/workflows/checks.yml/badge.svg)](https://github.com/A-C-Simon/multi-roi-crop-navigation/actions/workflows/checks.yml)
 
-![Detector output on a generated crop row scene](docs/assets/detector-preview.png)
+![Crop row detection on a field photograph](docs/assets/detector-preview.png)
 
-*Generated example scene. The panels show segmentation, weed removal, strip
-regions, and the fitted corridor. This image demonstrates the output format;
-it is not a field accuracy benchmark.*
+*Field photograph from the original project collection (`photo_7`). The panels
+show segmentation, weed removal, strip regions, and the fitted corridor. The
+[original image](examples/field/photo_7_2026-08-18_17-17-57.png) is included so
+you can reproduce this output.*
 
 ## What is included
 
@@ -47,20 +48,20 @@ installation, and the tested dependency versions.
 
 ## Try it
 
-Generate a small example dataset and run detection:
+Run detection on the included field photograph:
+
+```bash
+multiroi-detect --input examples/field --results_dir outputs/field-example
+```
+
+Open the composite PNG in `outputs/field-example` to inspect the same four
+panels shown above. The input is copied from the original photo collection
+without resizing or retouching. See [image details](docs/assets/README.md).
+
+For a short generated video, first create the test inputs:
 
 ```bash
 python examples/generate_sample.py
-multiroi-detect --input examples/data --results_dir outputs/detection
-```
-
-The example generator writes two PNG images and a short MP4. It needs no field
-dataset or download. Open the PNG files in `outputs/detection` to inspect the
-results.
-
-Process the example video:
-
-```bash
 multiroi-nav --input examples/data/corridor.mp4 --video --output outputs/video
 ```
 

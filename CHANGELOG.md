@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Use an original field photograph for the README preview and quickstart.
+- Include the unchanged example image and its reproduction command.
+
 ## 0.1.0
 
 - Extract the MultiROI detector and navigation stack into a standalone repository.
