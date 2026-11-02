@@ -18,3 +18,13 @@ shown in the README. `detector-preview.png` is a copy of that output.
 It is a single demonstration result, not an accuracy benchmark.
 
 Input SHA-256: `fed0df94b402cebc388a303602a7c3840fcd6d5b4eabbb4c8e9af43613ca990f`.
+
+## Navigation recording
+
+`navigation-demo.mp4` is the supplied screencast, copied without re-encoding.
+It shows the simulated rover alongside the live MultiROI overlay. The file is
+H.264 video at 964 by 340 pixels, with a duration of 62.52 seconds.
+
+`navigation-demo.gif` is an eight-second extract beginning at four seconds,
+rendered at 10 frames per second for the README. The complete recording is
+available through the linked MP4.

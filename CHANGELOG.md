@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Add the supplied navigation screencast and an animated README preview.
+- Present validation through the automated checks and reproducible examples.
+
 - Use an original field photograph for the README preview and quickstart.
 - Include the unchanged example image and its reproduction command.
 
