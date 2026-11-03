@@ -81,8 +81,14 @@ created as needed; use a different directory for each run you want to keep.
 
 ## Documentation
 
+The [Technical Design and Integration Reference](docs/technical-documentation.md)
+provides the complete system description, algorithm details, configuration
+reference, and integration procedures. A [PDF edition](docs/technical-documentation.pdf)
+is available for technical review and distribution.
+
 | Guide | Contents |
 | --- | --- |
+| [Technical documentation](docs/technical-documentation.md) | Design, algorithms, interfaces, configuration, and verification |
 | [Installation](docs/installation.md) | Python setup, dependency versions, verification |
 | [Usage](docs/usage.md) | Image, video, camera, and reference detector commands |
 | [Python interface](docs/python-api.md) | Detection results and frame processing |

@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Add revision 1.0 of the Technical Design and Integration Reference in Markdown and PDF.
+- Add a reproducible PDF builder and document generation to CI.
+
 - Add the supplied navigation screencast and an animated README preview.
 - Present validation through the automated checks and reproducible examples.
 

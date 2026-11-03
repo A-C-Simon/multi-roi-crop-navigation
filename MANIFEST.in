@@ -1,6 +1,6 @@
 include LICENSE THIRD_PARTY_NOTICES.md README.md requirements.txt constraints-tested.txt
 include test_temporal_filter.py
-recursive-include docs *.md *.json *.csv *.png *.gif *.mp4
+recursive-include docs *.md *.json *.csv *.png *.gif *.mp4 *.pdf
 recursive-include examples *.py *.png
 recursive-include scripts *.py
 recursive-include tests *.py *.sh *.xml *.world *.json *.sdf *.urdf *.config *.stl *.md LICENSE

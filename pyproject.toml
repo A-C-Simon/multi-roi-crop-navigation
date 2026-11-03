@@ -26,6 +26,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=7,<9", "build>=1.2,<2"]
+docs = ["reportlab>=3.6.8,<5"]
 
 [project.scripts]
 multiroi-detect = "test_multi_roi:main"
